@@ -6,7 +6,9 @@ module.exports = function() {
       .pipe($.gp.sourcemaps.init())
       .pipe($.gp.sass()).on('error', $.gp.notify.onError({ title: 'Style' }))
       .pipe($.gp.autoprefixer({ browsers: $.config.autoprefixerConfig }))
+      .pipe($.gcmq())
       .pipe($.gp.sourcemaps.write())
+      .pipe($.cleanCSS({compatibility: 'ie8'}))
       .pipe($.gulp.dest($.config.root + '/assets/css'))
       .pipe($.browserSync.stream());
   })

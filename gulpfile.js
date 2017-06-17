@@ -11,8 +11,15 @@ global.$ = {
   },
   gulp: require('gulp'),
   del: require('del'),
+  buffer: require('vinyl-buffer'),
+  imagemin: require('gulp-imagemin'),
+  merge: require('merge-stream'),
+  csso: require('gulp-csso'),
   browserSync: require('browser-sync').create(),
-  gp: require('gulp-load-plugins')()
+  smartgrid: require('smart-grid'),
+  gcmq: require('gulp-group-css-media-queries'),
+  gp: require('gulp-load-plugins')(),
+  cleanCSS: require('gulp-clean-css')
 };
 
 $.path.task.forEach(function(taskPath) {
@@ -27,8 +34,10 @@ $.gulp.task('default', $.gulp.series(
     'js:foundation',
     'js:process',
     'copy:image',
+    'copy:font',
     'css:foundation',
-    'sprite:svg'
+    'sprite:svg',
+    'sprite:png'
   ),
   $.gulp.parallel(
     'watch',

@@ -1,5 +1,5 @@
 const $ = require('jquery');
-const $ = require('../modules/slider');
+const slider = require('../modules/slider');
 
 console.log($);
 console.log(slider());

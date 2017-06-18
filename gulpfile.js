@@ -18,8 +18,7 @@ global.$ = {
   browserSync: require('browser-sync').create(),
   smartgrid: require('smart-grid'),
   gcmq: require('gulp-group-css-media-queries'),
-  gp: require('gulp-load-plugins')(),
-  cleanCSS: require('gulp-clean-css')
+  gp: require('gulp-load-plugins')()
 };
 
 $.path.task.forEach(function(taskPath) {

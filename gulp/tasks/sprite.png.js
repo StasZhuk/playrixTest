@@ -2,7 +2,7 @@
 
 module.exports = function () {
   $.gulp.task('sprite:png', function () {
-    var spriteData = $.gulp.src('./source/images/*.{png,gif}')
+    var spriteData = $.gulp.src('./source/images/**/*.png')
       .pipe($.gp.spritesmith({
         imgName: 'sprite.png',
         cssName: 'png.sprite.css'

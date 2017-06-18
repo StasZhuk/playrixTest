@@ -4,10 +4,9 @@ global.$ = {
   package: require('./package.json'),
   config: require('./gulp/config'),
   path: {
+    source: './source',
     task: require('./gulp/paths/tasks.js'),
-    jsFoundation: require('./gulp/paths/js.foundation.js'),
     cssFoundation: require('./gulp/paths/css.foundation.js'),
-    app: require('./gulp/paths/app.js')
   },
   gulp: require('gulp'),
   del: require('del'),
@@ -18,6 +17,7 @@ global.$ = {
   browserSync: require('browser-sync').create(),
   smartgrid: require('smart-grid'),
   gcmq: require('gulp-group-css-media-queries'),
+  webpack: require('webpack'),
   gp: require('gulp-load-plugins')()
 };
 
@@ -30,8 +30,7 @@ $.gulp.task('default', $.gulp.series(
   $.gulp.parallel(
     'sass',
     'pug',
-    'js:foundation',
-    'js:process',
+    'webpack',
     'copy:image',
     'copy:font',
     'css:foundation',

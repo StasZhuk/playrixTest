@@ -1,19 +1,17 @@
 'use strict';
 
 module.exports = [
-  './gulp/tasks/sass.js',
-  './gulp/tasks/serve.js',
-  './gulp/tasks/pug.js',
-  './gulp/tasks/watch.js',
-  './gulp/tasks/clean.js',
-  './gulp/tasks/js.foundation.js',
-  './gulp/tasks/css.foundation.js',
-  './gulp/tasks/js.process.js',
-  './gulp/tasks/js.lint.js',
-  './gulp/tasks/copy.image.js',
-  './gulp/tasks/copy.font.js',
-  './gulp/tasks/sprite.png.js',
-  './gulp/tasks/sprite.svg.js',
-  './gulp/tasks/smartgrid.js'
+  './gulp/tasks/sass',
+  './gulp/tasks/serve',
+  './gulp/tasks/pug',
+  './gulp/tasks/watch',
+  './gulp/tasks/clean',
+  './gulp/tasks/webpack',
+  './gulp/tasks/css.foundation',
+  './gulp/tasks/copy.image',
+  './gulp/tasks/copy.font',
+  './gulp/tasks/sprite.png',
+  './gulp/tasks/sprite.svg',
+  './gulp/tasks/smartgrid'
 ];
 

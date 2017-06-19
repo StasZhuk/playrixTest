@@ -12,6 +12,7 @@ module.exports = [
   './gulp/tasks/copy.font',
   './gulp/tasks/sprite.png',
   './gulp/tasks/sprite.svg',
-  './gulp/tasks/smartgrid'
+  './gulp/tasks/smartgrid',
+  './gulp/tasks/change.url'
 ];
 

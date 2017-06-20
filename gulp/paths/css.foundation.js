@@ -2,5 +2,5 @@
 
 module.exports = [
   './node_modules/normalize.css/normalize.css',
-  './node_modules/font-awesome/css/font-awesome-modify.min.css'
+  './node_modules/font-awesome/css/font-awesome-modify/font-awesome.css'
 ];

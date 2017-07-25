@@ -1,10 +1,11 @@
 @import 'base/vars';
 @import 'base/fonts';
+
+// layout
 @import 'layout/smart-grid';
+
+// base style
 @import 'base/adjustments';
 
-body {
-  margin: 0;
-}
-
-@import 'common/greating';
+// commons
+@import 'common/**/*';

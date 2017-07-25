@@ -1,5 +1,13 @@
-extends _template
-block source
-  - var url_js = '/assets/js/index.js'
-block variables
-  - var title = 'Index page'
+html
+  block source
+    - var url_js= 'index.js'
+
+  include common/_generals
+
+    
+  block title
+    - var title= 'Index page'
+  body
+    div(id="page-preloader").preloader
+      .loader
+        span(id="load-perc")

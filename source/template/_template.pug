@@ -1,8 +1,11 @@
-block variables
+include common/_mixins
 
-doctype html
+block variables
 html
   include common/_generals
 
   body
-    block content
+    .main__wrapper
+      include ./common/_header
+      
+      block footer

@@ -2,7 +2,7 @@
 
 module.exports = function () {
   $.gulp.task('sprite:png', function () {
-    var spriteData = $.gulp.src('./source/images/**/*.png')
+    var spriteData = $.gulp.src(['./source/images/**/*.png', '!./source/images/**/_*.png'])
       .pipe($.gp.spritesmith({
         imgName: 'sprite.png',
         cssName: 'png.sprite.css'
@@ -12,12 +12,12 @@ module.exports = function () {
     var imgStream = spriteData.img
       // DEV: We must buffer our stream into a Buffer for `imagemin` 
       .pipe($.buffer())
-      .pipe($.imagemin())
+      .pipe($.gp.imagemin())
       .pipe($.gulp.dest($.config.root + '/assets/img/sprite/'));
 
     // Pipe CSS stream through CSS optimizer and onto disk 
     var cssStream = spriteData.css
-      .pipe($.csso())
+      .pipe($.gp.csso())
       .pipe($.gulp.dest($.config.root + '/assets/css/sprite'));
 
     // Return a merged stream to handle both `end` events 

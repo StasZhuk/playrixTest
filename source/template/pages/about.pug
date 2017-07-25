@@ -1,7 +1,15 @@
 extends ../_template
 
 block source
-  - var url_js = '/assets/js/about.js'
+  - var url_js = 'works.js'
 
 block variables
   - var title = 'About page'
+
+
+//- main content here
+
+
+block footer
+  - var footer_subclass =  " works"
+  include ../common/_footer

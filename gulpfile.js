@@ -11,13 +11,11 @@ global.$ = {
   gulp: require('gulp'),
   del: require('del'),
   buffer: require('vinyl-buffer'),
-  imagemin: require('gulp-imagemin'),
   merge: require('merge-stream'),
-  csso: require('gulp-csso'),
   browserSync: require('browser-sync').create(),
   smartgrid: require('smart-grid'),
   gcmq: require('gulp-group-css-media-queries'),
-  webpack: require('webpack'),
+  fs: require('fs'),
   gp: require('gulp-load-plugins')()
 };
 

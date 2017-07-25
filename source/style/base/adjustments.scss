@@ -1,15 +1,45 @@
-body, html {
+@import '../_mixin/_mixins';
+body,
+html {
     height: 100%;
     width: 100%;
 }
 
 html {
     box-sizing: border-box;
+    font-size: $text-size_main;
+    font-family: "robotoregular", sans-serif;
+    color: $text-color_main;
+
+    @include lg() {
+        font-size: 15px;
+    }
+    @include md() {
+        font-size: 14px;
+    }
+    @include sm() {
+        font-size: 13px;
+    }
 }
+body {
+    background-color: #1B3665;
+}
+
 *,
 *::after,
 *::before {
     box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+p {
     margin: 0;
     padding: 0;
 }
@@ -17,4 +47,19 @@ html {
 ul,
 ol {
     list-style: none;
+}
+
+a {
+    color: $white;
+    text-decoration: none;
+}
+
+input,
+textarea,
+button {
+    border: none;
+    outline: none;
+}
+input {
+    border: 1px solid transparent;
 }

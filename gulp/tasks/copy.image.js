@@ -3,7 +3,7 @@
 module.exports = function () {
   $.gulp.task('copy:image', function () {
 
-    var images = $.gulp.src('./source/images/**/*.*', {
+    var images = $.gulp.src('./source/images/generals/**/*.*', {
         since: $.gulp.lastRun('copy:image')
       })
       .pipe($.gp.imagemin())

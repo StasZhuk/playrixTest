@@ -3,22 +3,22 @@
         @content;
     }
 }
-@mixin lg() {
+@mixin desktop() {
     @media screen and (max-width: 992px) {
         @content;
     }
 }
-@mixin md() {
+@mixin laptop() {
     @media screen and (max-width: 768px) {
         @content;
     }
 }
-@mixin sm() {
+@mixin phone() {
     @media screen and (max-width: 480px) {
         @content;
     }
 }
-@mixin xs() {
+@mixin xsm() {
     @media screen and (max-width: 320px) {
         @content;
     }

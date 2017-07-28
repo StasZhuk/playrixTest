@@ -1,11 +1,15 @@
 include common/_mixins
-
 block variables
-html
+
+doctype html
+html(lang="ru-RU")
   include common/_generals
 
   body
     .main__wrapper
       include ./common/_header
       
-      block footer
+      //- основной контент
+      block content
+
+      include ./common/_footer

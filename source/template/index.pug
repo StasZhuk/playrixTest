@@ -1,13 +1,7 @@
-html
-  block source
-    - var url_js= 'index.js'
-
-  include common/_generals
-
-    
-  block title
+extends _template
+ 
+block variables
     - var title= 'Index page'
-  body
-    div(id="page-preloader").preloader
-      .loader
-        span(id="load-perc")
+    - var url_js= 'index.js' 
+
+block content

@@ -28,7 +28,6 @@ $.gulp.task('default', $.gulp.series(
   $.gulp.parallel(
     'sass',
     'pug',
-    'change:url',
     'webpack',
     'copy:image',
     'copy:font',

@@ -5,7 +5,7 @@ module.exports = function () {
         var urlAdjuster = require('gulp-css-url-adjuster');
         return $.gulp.src('./node_modules/font-awesome/css/font-awesome.css').
         pipe(urlAdjuster({
-                replace: ['../fonts', '/build/assets/fonts/fontAwesome/'],
+                replace: ['../fonts', '../fonts/fontAwesome/'],
             }))
             .pipe($.gulp.dest('./node_modules/font-awesome/css/font-awesome-modify'));
     });

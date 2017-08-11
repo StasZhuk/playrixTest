@@ -7,6 +7,8 @@ global.$ = {
     source: './source',
     task: require('./gulp/paths/tasks.js'),
     cssFoundation: require('./gulp/paths/css.foundation.js'),
+    jsFoundation: require('./gulp/paths/js.foundation.js'),
+    app: require('./gulp/paths/app.js')
   },
   gulp: require('gulp'),
   del: require('del'),
@@ -28,6 +30,8 @@ $.gulp.task('default', $.gulp.series(
   $.gulp.parallel(
     'sass',
     'pug',
+    // 'js:foundation',
+    // 'js:process',
     'webpack',
     'copy:image',
     'copy:font',

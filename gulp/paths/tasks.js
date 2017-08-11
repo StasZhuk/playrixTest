@@ -13,6 +13,9 @@ module.exports = [
   './gulp/tasks/sprite.png',
   './gulp/tasks/sprite.svg',
   './gulp/tasks/smartgrid',
-  './gulp/tasks/change.url'
+  './gulp/tasks/change.url',
+  './gulp/tasks/js.process',
+  // './gulp/tasks/js.lint'
+  './gulp/tasks/js.foundation'
 ];
 

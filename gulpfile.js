@@ -30,6 +30,7 @@ $.gulp.task('default', $.gulp.series(
   $.gulp.parallel(
     'sass',
     'pug',
+    'change:url',
     // 'js:foundation',
     // 'js:process',
     'webpack',

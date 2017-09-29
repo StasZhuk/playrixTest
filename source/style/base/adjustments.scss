@@ -77,3 +77,31 @@ svg {
 section {
     position: relative;
 }
+
+.container {
+    position: relative;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+a {
+    color: $white;
+    cursor: pointer;
+}
+
+.text-acsent {
+    color: $acsent;
+}
+
+.btn {
+    font-family: 'robotoregular', sans-serif;
+    display: inline-block;
+    padding: 2rem 5rem;
+    background-color: $acsent;
+    border-radius: 3px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $black;
+}

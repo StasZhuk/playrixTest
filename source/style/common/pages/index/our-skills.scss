@@ -1,0 +1,35 @@
+.our-skills {
+    .icon {
+        min-width: 60px;
+        height: 50px;
+        fill: $acsent;
+        margin-right: 20px;
+        transition: 3s transform;
+    }
+}
+
+.our-skills__list {
+    @include row-flex();
+}
+
+.our-skills__item {
+    @include col();
+    @include col-4();
+    display: flex;
+    margin-bottom: 30px;
+
+    &:hover {
+        .icon {
+            transform: rotate(20deg);
+        }
+    }
+}
+
+.our-skills__item-heading {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.our-skills__item-descr  {
+line-height: 1.4;
+}

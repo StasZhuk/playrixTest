@@ -1,0 +1,37 @@
+.we-done {
+    position: relative;
+    background: url('../img/1.jpg') no-repeat center;
+    background-size: cover;
+    padding: 100px 0;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba($acsent, 0.7);
+    }
+}
+
+.we-done__list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.we-done__item {
+    display: flex;
+    align-items: center;
+    
+}
+
+.we-done__number {
+    font-size: 6rem;
+    margin-right: 10px;
+    color: #5D5D5D;
+}
+.we-done__text {
+    font-size: 2rem;
+    color: $white;
+}

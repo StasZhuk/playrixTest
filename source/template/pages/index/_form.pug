@@ -1,0 +1,21 @@
+section.section.form
+    .container
+        .section__heading-descr наша почта
+        h2.section__heading
+            span.text--black Связаться
+            | с нами
+        form(action="" method="post").index-form
+            .input-wrap
+                input(type="text", name="name" placeholder="Ваше имя" required)
+            .input-wrap
+                input(type="mail", name="email" placeholder="Ваша почта" required)
+            .input-wrap
+                textarea(name="message", cols="30", rows="1" placeholder="Ваше сообщение")
+            .checkbox-wrap
+                input(type="checkbox", name="politic" required)
+                p.checkbox-descr ознакомлен с 
+                    a(href="#").politic политикой конфидециальности 
+                    | и согласен на обработку личных данных
+            .btn-wrap
+                a(href="#").btn.btn-heading.orange Отправить
+                            +icon('arrow-right')

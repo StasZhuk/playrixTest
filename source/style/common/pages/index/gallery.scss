@@ -1,12 +1,12 @@
-.gallery {
-    .btn-heading {
-        &:hover {
-            color: $acsent;
-            .icon {
-                fill: $acsent;
-            }
+.btn-heading {
+    &.orange {
+    &:hover {
+        color: $acsent;
+        .icon {
+            fill: $acsent;
         }
     }
+}
 }
 
 .gallery__list {

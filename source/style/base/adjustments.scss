@@ -124,6 +124,12 @@ a {
     border: 2px solid $acsent;
     min-width: 180px;
     transition: 0.5s background-color, 0.5s color;
+    @include sm(font-size, 1.2rem);    
+    @include sm(padding, 1.5rem);    
+}
+
+.btn-wrap {
+    @include xs(text-align, center);
 }
 
 .btn-border {
@@ -143,6 +149,8 @@ a {
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 50px;
+
+    @include xs (font-size, 24px)
 }
 
 .section__heading-descr {

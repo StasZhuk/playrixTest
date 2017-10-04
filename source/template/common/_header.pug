@@ -1,18 +1,23 @@
 header.header
     .header__top
         .container
-            .header__line
-                .barnd-logo BRAND-LOGO
-                nav.nav.nav-header
-                    ul.nav__list
-                        li.nav__list-item
-                            a.nav__list-link Главная
-                        li.nav__list-item
-                            a.nav__list-link Контакты
-                        li.nav__list-item
-                            a.nav__list-link Портфолио
-                        li.nav__list-item
-                            a.nav__list-link Торги/Закупки
+            .row
+                .header__line
+                    .barnd-logo BRAND-LOGO
+                    nav.nav.nav-header
+                        ul.nav__list
+                            li.nav__list-item
+                                a.nav__list-link Главная
+                            li.nav__list-item
+                                a.nav__list-link Контакты
+                            li.nav__list-item
+                                a.nav__list-link Портфолио
+                            li.nav__list-item
+                                a.nav__list-link Торги/Закупки
+                    .btn-burger.no-animation
+                        span.burger__top
+                        span.burger__middle
+                        span.burger__bottom
     .header__section
         .container
             .header__center-content
@@ -22,6 +27,7 @@ header.header
                         | Дом 
                         span.text-acsent мечты
                     span.header__heading-descr Микрорайоны, многоквартирные дома, отделка, коммуникации
-                    a(href="#").btn.btn-border Связаться с нами
-                    a(href="#").btn.btn-heading Подробнее
-                        +icon('arrow-right')
+                    .btn-wrap
+                        a(href="#").btn.btn-border Связаться с нами
+                        a(href="#").btn.btn-heading Подробнее
+                            +icon('arrow-right')

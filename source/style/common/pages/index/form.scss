@@ -1,0 +1,56 @@
+.form {
+    background: url('../img/index/form/form-bg.png') no-repeat 90% bottom;
+    background-size: 40%;
+    @include md(background-size, 50%);
+    @include sm(background, none);
+} 
+
+.index-form {
+    margin-right: 50%;
+    padding-right: 50px;
+
+    @include sm(margin-right, 0)
+    @include sm(padding-right, 0)
+}
+
+.input-wrap {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="mail"],
+textarea {
+    height: 50px;
+    border: none;
+    border-bottom: 2px solid $black;
+    width: 100%;
+}
+
+input[type="checkbox"] {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+textarea {
+    padding-top: 15px; 
+    margin-bottom: 20px;   
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.checkbox-wrap {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.politic {
+    color: $acsent;
+}
+
+.checkbox-descr {
+    line-height: 1.4;
+}

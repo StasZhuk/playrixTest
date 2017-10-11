@@ -1,1 +1,43 @@
 header.header
+    .header__top
+        .container
+            .row
+                .header__top-left
+                    nav.menu-nav
+                        .menu-nav__toggle
+                            .burger
+                                span.burger__top
+                                span.burger__middle
+                                span.burger__bottom
+                        ul.menu-nav__list
+                            li.menu-nav__item
+                                a(href="#").menu-nav__link Tour
+                            li.menu-nav__item
+                                a(href="#").menu-nav__link Features
+                            li.menu-nav__item
+                                a(href="#").menu-nav__link Pricing
+                .header__top-center
+                    .logo-brand
+                        img(src="./assets/img/logo.png")
+                .header__top-right
+                    .menu-info
+                        ul.menu-nav__list
+                            li.menu-nav__item
+                                a(href="#").menu-nav__link.text-pale Help
+                            li.menu-nav__item
+                                a(href="#").menu-nav__link Contacts
+                            li.menu-nav__item
+                                a(href="#").menu-nav__link.btn.btn--blue
+                                    +icon('apple') 
+                                    span Get app
+    .header__hero
+        .container
+            .row
+                h1.main-heading What happens tomorrow?
+                .header__hero-desc 
+                    | The sight of the tumblers restored Bob Sawyer to a degree of equanimity which he had not possessed since his interview with his landlady. His face brightened up, and he began to feel quite convivial.
+                .header__hero-btn  
+                    a(href="#").menu-nav__link.btn.btn--border
+                        +icon('play')
+                        span Watch video
+                .header__hero-img

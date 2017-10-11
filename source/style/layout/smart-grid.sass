@@ -1,11 +1,11 @@
 $columns: 12
-$offset: 10px
+$offset: 30px
 $offset_one_side: ($offset / 2)
 $atom: (100% / $columns)
 
 $break_lg: 1200px
 $break_md: 992px
-$break_sm: 768px
+$break_sm: 760px
 $break_xs: 480px
 
 =reset()
@@ -59,23 +59,23 @@ $break_xs: 480px
 
 =wrapper()
     max-width: 1200px
-    padding-left: 10px
-    padding-right: 10px
+    padding-left: 15px
+    padding-right: 15px
     margin: 0 auto
 
     @media screen and (max-width: $break_lg)
-        padding-left: 20px
-        padding-right: 20px
+        padding-left: 15px
+        padding-right: 15px
     
 
     @media screen and (max-width: $break_md)
-        padding-left: 10px
-        padding-right: 10px
+        padding-left: 15px
+        padding-right: 15px
     
 
     @media screen and (max-width: $break_sm)
-        padding-left: 10px
-        padding-right: 10px
+        padding-left: 15px
+        padding-right: 15px
     
 
     @media screen and (max-width: $break_xs)
@@ -110,7 +110,6 @@ $break_xs: 480px
 
 =size($n)
     $value: $atom * $n
-    min-width: #{calc(#{$value} - #{$offset})}
     width: #{calc(#{$value} - #{$offset})}
 
 =col-1()
@@ -217,7 +216,6 @@ $break_xs: 480px
 =size-lg($n)
     @media screen and (max-width: $break_lg)
         $value: $atom * $n
-        min-width: #{calc(#{$value} - #{$offset})}
         width: #{calc(#{$value} - #{$offset})}
     
 
@@ -373,7 +371,6 @@ $break_xs: 480px
 =size-md($n)
     @media screen and (max-width: $break_md)
         $value: $atom * $n
-        min-width: #{calc(#{$value} - #{$offset})}
         width: #{calc(#{$value} - #{$offset})}
     
 
@@ -529,7 +526,6 @@ $break_xs: 480px
 =size-sm($n)
     @media screen and (max-width: $break_sm)
         $value: $atom * $n
-        min-width: #{calc(#{$value} - #{$offset})}
         width: #{calc(#{$value} - #{$offset})}
     
 
@@ -685,7 +681,6 @@ $break_xs: 480px
 =size-xs($n)
     @media screen and (max-width: $break_xs)
         $value: $atom * $n
-        min-width: #{calc(#{$value} - #{$offset})}
         width: #{calc(#{$value} - #{$offset})}
     
 

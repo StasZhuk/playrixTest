@@ -8,26 +8,26 @@ module.exports = function () {
             /* less || scss || sass || styl */
             columns: 12,
             /* number of grid columns */
-            offset: "20px",
+            offset: "30px",
             /* gutter width px || % */
             container: {
-                maxWidth: '1200px',
+                maxWidth: '1170px',
                 /* max-width оn very large screen */
-                fields: '10px' /* side fields */
+                fields: '15px' /* side fields */
             },
             breakPoints: {
                 lg: {
-                    'width': '1200px',
+                    'width': '1170px',
                     /* -> @media (max-width: 1100px) */
-                    'fields': '10px' /* side fields */
+                    'fields': '15px' /* side fields */
                 },
                 md: {
                     'width': '992px',
-                    'fields': '10px'
+                    'fields': '15px'
                 },
                 sm: {
                     'width': '760px',
-                    'fields': '10px'
+                    'fields': '15px'
                 },
                 xs: {
                     'width': '480px',

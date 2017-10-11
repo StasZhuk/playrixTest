@@ -8,21 +8,21 @@ html {
     line-height: 1;
     font-size: 62.5%;
     box-sizing: border-box;
-    color: $text-color_main;
+    color: $text-color;
 }
 
 body {
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-family: $main-font;
     background-color: $white;
     @include desktop() {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
     @include laptop() {
-        font-size: 1.4rem;
+        font-size: 1.8rem;
     }
     @include phone() {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -45,13 +45,28 @@ p {
     padding: 0;
 }
 
+h1, h2, h3 {
+    font-family: 'robotomedium', sans-serif;    
+    color: $text-color-b;
+}
+
+h1 {
+    font-size: $ts-h1;
+}
+h2 {
+    font-size: $ts-h2;
+    line-height: 52px;
+}
+h3 {
+    font-size: $ts-h3;
+}
+
 ul,
 ol {
     list-style: none;
 }
 
 a {
-    color: $black;
     text-decoration: none;
 }
 
@@ -75,110 +90,71 @@ svg {
 }
 
 section {
-    position: relative;
-}
-
-.section {
-    padding: 50px 0;
+    padding: 125px 0;
 }
 
 .container {
     @include wrapper();
-    position: relative;
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
+    height: 100%;
 }
 
 .row {
     @include row-flex();
 }
 
-a {
-    color: $white;
-    cursor: pointer;
+.text-pale {
+    opacity: 0.4;
 }
 
-.text-acsent {
-    color: $acsent;
-}
-.text--bold {
-    font-weight: bold;
-}
-
-.btn__wrap {
-    text-align: center;
+.icon {
+    transition: 0.3s fill;
 }
 
 .btn {
-    font-family: 'robotoregular', sans-serif;
-    display: inline-block;
-    padding: 2rem 3rem;
-    background-color: $acsent;
-    border-radius: 3px;
-    font-size: 1.4rem;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: $black;
-    border: 2px solid $acsent;
-    min-width: 180px;
-    transition: 0.5s background-color, 0.5s color;
-    @include sm(font-size, 1.2rem);    
-    @include sm(padding, 1.5rem);    
-}
-
-.btn-wrap {
-    @include xs(text-align, center);
-}
-
-.btn-border {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    padding: 10px 25px;
     background-color: transparent;
-    border: 2px solid $acsent;
-    color: $white;
+    border-radius: 25px;
+    color: #fff;
+    transition: 0.3s color, 0.3s background-color;
+    border: 1px solid transparent;
+
+    &.btn--green {
+        background-color: $acsent-sec;
+        color: #fff;
+    }
+    &.btn--blue {
+        background-color: $acsent;
+        color: #fff;
+        
+    }
+    &.btn--border {
+        border: 1px solid rgba($text-color-b, 0.1);
+        color: $text-color-b;
+    }
 
     &:hover {
-        background-color: $acsent;
-        color: $black;
+        &.btn--green {
+            background-color: transparent;
+            border: 1px solid rgba($acsent-sec, 0.1);            
+            color: $acsent-sec;
+        }
+        &.btn--blue {
+            background-color: transparent;
+            border: 1px solid rgba($acsent, 0.1);                        
+            color: $acsent;
+            .icon {
+                fill: $acsent;
+            }
+        }
+        &.btn--border {
+            background-color: $text-color-b;
+            color: white;
+            .icon {
+                fill: #fff;
+            }
+        }
     }
-}
-
-.section__heading {
-    font-size: $ts-h2;
-    color: $acsent;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 50px;
-
-    @include xs (font-size, 24px)
-}
-
-.section__heading-descr {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 10px;
-
-    &:after,
-    &:before {
-        content: '';
-        display: inline-block;
-        height: 2px;
-        background-color: $black;
-        width: 50px;
-        border-radius: 10px;
-    }
-
-    &:after {
-        margin-left: 10px;
-    }
-    &:before {
-        margin-right: 10px;
-    }
-}
-
-.text--black {
-    color: $black;
-    margin-right: 10px;
 }
